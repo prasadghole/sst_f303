@@ -43,12 +43,7 @@
 /* test pins on GPIO PA */
 #define LED_PIN   5U /* LED LD2-Green */
 
-/* ISRs used in the application ============================================*/
-void SysTick_Handler(void);  /* prototype */
 
-void SysTick_Handler(void) { /* system clock tick ISR */
-    SST_TimeEvt_tick(); /* process all SST time events */
-}
 
 /* Assertion handler ======================================================*/
 DBC_NORETURN
